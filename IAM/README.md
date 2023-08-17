@@ -1,8 +1,11 @@
 # AWS PROFILE
 
 aws configure --profile <profilename>    // to create profile
+
 aws configure list-profiles      // to list the profiles
+
 export aws-profile=<profilename>   // swith b/w profiles
+
 aws sts get-caller-identity     // to know the current profile
 
 # IAM
