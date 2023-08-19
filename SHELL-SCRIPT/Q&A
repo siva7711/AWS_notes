@@ -1,0 +1,8 @@
+Explin the Regular Shell command ( ls, mkdir, cat, vi, cp, mv, top ...etc.,)
+How to retrive error log files (curl, pipe(|) & grep)
+how to retriew the perticular column from output (curl, pipe(|) , grep & awk)
+what will the out put from date | echo " date is"  (it will print date is only not the date because date is the stdoutput it can't use with |.
+what is crontab in linux admin - it's nothing but alarm, automate the running script at specific times.
+waht is soft link and hard link  - create and save (memory - soft link) -- create a copy , modified  (hard link), python3 is soft and python is hard link
+traceroute google.com
+how will you manage logs of system that generate huge logfile everyday?  logrotate (tar, gzip, zip)
