@@ -1,4 +1,4 @@
-##SHELL COMMANDS
+# SHELL COMMANDS
 
 CAT    - open file read mode
 
