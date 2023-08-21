@@ -1,0 +1,19 @@
+#!  (called as shebang)
+# https://docs.aws.amazon.com/cli/latest/index.html  (aws cli commands)
+# while running ./<filename.sh> | more   -- to read more comfort
+# aws ec2 describe-instances | jq 'reservations[].instances[].instanceid'      // here jq is the JSON parsor same way yq is the YAML parsor
+
+#!/bin/bash
+
+INSTANCE_ID="your-instance-id"  # Replace with your actual instance ID
+
+aws ec2 stop-instances --instance-ids $INSTANCE_ID
+aws ec2 start-instances --instance-ids $INSTANCE_ID
+
+#!/bin/bash
+aws s3 ls
+aws ec2 describe-instances
+aws lambda list-functions
+aws iam list-users
+
+
