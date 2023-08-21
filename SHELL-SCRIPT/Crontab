@@ -1,0 +1,29 @@
+* * * * * command_to_run
+│ │ │ │ │
+│ │ │ │ └─── Day of the week (0 - 6) (Sunday=0 or 7)
+│ │ │ └────── Month (1 - 12)
+│ │ └───────── Day of the month (1 - 31)
+│ └──────────── Hour (0 - 23)
+└─────────────── Minute (0 - 59)
+
+cron is a time-based job scheduler in Unix-like operating systems that allows you to schedule and automate the execution of tasks at specific intervals or times. 
+crontab is the command used to manage these scheduled tasks, known as "cron jobs."
+Special Characters:
+
+*: Represents all possible values for a field.
+-: Used to specify a range of values (e.g., 1-5 means 1, 2, 3, 4, and 5).
+,: Used to separate multiple values within a field (e.g., 1,3,5).
+/: Used to specify a step value (e.g., */5 means every 5 minutes).
+@: Used to specify predefined time intervals (e.g., @daily for once a day).
+Examples:
+
+0 2 * * * /path/to/script.sh: Runs the script at 2 AM daily.
+30 * * * * /path/to/script.sh: Runs the script every hour at the 30th minute.
+*/15 * * * * /path/to/script.sh: Runs the script every 15 minutes.
+@daily /path/to/script.sh: Runs the script once a day at midnight.
+Logging and Notifications:
+By default, the output of cron jobs is emailed to the owner of the cron job. You can redirect the output to a file within the cron job itself for logging purposes. For example:
+
+javascript
+Copy code
+* * * * * /path/to/script.sh >> /path/to/logfile.log 2>&1
